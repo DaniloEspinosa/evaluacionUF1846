@@ -1,0 +1,17 @@
+<header>
+  <div>
+    <img src="/logo/bunny.webp" alt="logo bunny" />
+    <h1>White Rabbit Inc</h1>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="/">🏠</a></li>
+      <% departamentos.forEach(item=> { %>
+        <li><a href="/departamento/<%= item.departamento %>">
+            <%= item.departamento %>
+          </a></li>
+        <% }) %>
+    </ul>
+  </nav>
+</header>
